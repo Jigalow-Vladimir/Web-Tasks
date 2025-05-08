@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Менеджер задач</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Система керування задачами</h1>
+    
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Введіть опис задачі...">
+      <button id="addTaskBtn">Додати задачу</button>
+    </div>
+
+    <div class="filters">
+      <label><input type="radio" name="filter" value="all" checked> Всі</label>
+      <label><input type="radio" name="filter" value="active"> В роботі</label>
+      <label><input type="radio" name="filter" value="done"> Виконано</label>
+      <label><input type="radio" name="filter" value="deleted"> Видалено</label>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
